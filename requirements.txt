@@ -1,0 +1,6 @@
+sty
+git+https://github.com/kubinka0505/ffpb-fix
+distro>=1.7
+colour>=0.1.5
+Pillow>=8.3
+mutagen>=1.45.1
