@@ -1,0 +1,62 @@
+name: "🐛 Bug Report"
+description: Create a new ticket for a bug.
+title: "🐛 [Bug] — <Title>"
+labels: ["bug"]
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: Please enter an explicit description of your issue.
+      placeholder: Short and explicit description of your incident...
+    validations:
+      required: true
+  - type: textarea
+    id: reprod
+    attributes:
+      label: "Reproduction steps"
+      description: Please enter an explicit description of your issue.
+      placeholder: How did it happened?
+    validations:
+      required: false
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: "Screenshots"
+      description: If applicable, add screenshots to help explain your problem.
+      value: |
+        ![Description](Image_URL.png)
+      render: bash
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Logs"
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: bash
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: "Used OS"
+      multiple: true
+      options:
+        - Windows
+        - Linux
+        - MacOS
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        ---
+  - type: checkboxes
+    attributes:
+      label: Is there an existing report for this?
+      description: Please search to see if this type of report already exists, and update program version if outdated.
+      options:
+        - label: My issue isn't a duplicate, and I use the latest version.
+          required: true

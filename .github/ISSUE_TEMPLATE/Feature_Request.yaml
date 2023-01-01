@@ -1,0 +1,41 @@
+name: "💡 Feature Request"
+description: Create a new ticket for a new feature request
+title: "💡 [Feature] — <Title>"
+labels: ["question"]  
+
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: "Summary"
+      description: Provide a brief explanation of the feature.
+      placeholder: Describe your feature request in a few lines.
+    validations:
+      required: true
+  - type: textarea
+    id: reference_issues
+    attributes:
+      label: "Reference Issues"
+      description: Common issues.
+      placeholder: "#Issues IDs"
+    validations:
+      required: false
+  - type: textarea
+    id: basic_example
+    attributes:
+      label: "Basic Example"
+      description: Indicate here some basic examples of your feature.
+      placeholder: A few specific words about your feature request.
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        ---
+  - type: checkboxes
+    attributes:
+      label: Is there an existing ticket for this?
+      description: Please search to see if an issue already exists and/or is was not implemented in a recent version.
+      options:
+        - label: I have searched the existing issues and checked the recent builds/commits.
+          required: true
