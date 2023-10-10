@@ -1,0 +1,4 @@
+Resolution = "720p"
+Audio Bitrate = "128k"
+Resize Thumbnail = True
+WebM Encode = False

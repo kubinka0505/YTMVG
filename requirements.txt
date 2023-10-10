@@ -1,0 +1,10 @@
+sty >= 1.0.4
+colour >= 0.1.5
+
+distro >= 1.7; sys_platform != "win32"
+mutagen >= 1.45.1
+
+Pillow >= 9
+opencv-python
+numpy
+scikit-learn

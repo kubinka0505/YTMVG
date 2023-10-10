@@ -1,0 +1,48 @@
+{
+	"Media": {
+		"Image": {
+			"Path": "",
+			"Thumbnail": {
+				"Generate": true,
+				"Resize": false,
+				"Background": {
+					"Color": {
+						"Type": "Wet"
+					},
+					"Properties": {
+						"Brightness": "40.00%",
+						"Saturation": "100.00%"
+					}
+				}
+			}
+		},
+		"Audio": {
+			"Path": "",
+			"Bitrate": "255k"
+		},
+		"Video": {
+			"Generate": true,
+			"WebM": false,
+			"Maximum_Resolution": "1080p"
+		},
+		"Description": {
+			"Generate": true
+		}
+	},
+	"Settings": {
+		"Preset": null,
+		"Directory": {
+			"Initial": {
+				"Audio": "~/Music",
+				"Image": "~/Pictures"
+			},
+			"Open": true,
+			"Output": "./Videos"
+		},
+		"Logs": {
+			"Verbosity": 1,
+			"Information": true,
+			"Sound": true
+		}
+	}
+}

@@ -1,0 +1,4 @@
+Resolution = "2160p"
+Audio Bitrate = "257k"
+Resize Thumbnail = False
+WebM Encode = True
